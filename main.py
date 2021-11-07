@@ -46,7 +46,7 @@ async def nick(ctx, member : discord.Member , *nick):
 
 @bot.command()
 async def rand(ctx, low, high):
-    msg = random.randint(int(low), int(high)+1)
+    msg = random.randint(int(low), int(high))
     await ctx.send(msg)
 
 
